@@ -12,7 +12,12 @@ The client supports basic HTTP authentication for environments where a reverse-p
 import pyoxidized
 
 host = "http://<oxidized-server>"
+
+# With authentication
 oxi = pyoxidized.OxidizedApi(host, username, password)
+
+# Without authentication
+oxi = pyoxidized.OxidizedApi(host)
 
 nodes = oxi.get_nodes()
 device = nodes[0]
