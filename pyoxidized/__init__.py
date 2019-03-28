@@ -1,1 +1,1 @@
-from pyoxi.api import OxidizedApi
+from pyoxidized.api import OxidizedApi
